@@ -17,6 +17,7 @@ redis = { version = "0.18", optional = true }
 [features]
 default = ["mobc/tokio", "redis/tokio-comp"]
 async-std = ["mobc/async-std", "redis/async-std-comp"]
+tokio-native-tls = ["redis/tokio-native-tls-comp"]
 
 [dev-dependencies]
 actix-web = "2.0.0"
